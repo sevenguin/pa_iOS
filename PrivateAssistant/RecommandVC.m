@@ -21,7 +21,7 @@
     UIButton *btnUser = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 35, 35)];
     [btnUser addTarget:self action:@selector(doSetting:) forControlEvents:UIControlEventTouchDown];
     [btnUser setBackgroundImage:image forState:UIControlStateNormal];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btnUser];
+    //self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btnUser];
     self.navigationController.navigationBar.tintColor = [UIColor colorWithWhite:0.2 alpha:1];
 }
 
