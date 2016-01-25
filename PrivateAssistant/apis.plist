@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SendVerifyCode</key>
+	<dict>
+		<key>url</key>
+		<string>pa_user/sendverifycode</string>
+	</dict>
+	<key>QueryUserBaseInfo</key>
+	<dict>
+		<key>url</key>
+		<string>pa_user/queryuserbaseinfo</string>
+	</dict>
+	<key>SetNickName</key>
+	<dict>
+		<key>url</key>
+		<string>pa_user/setnickname</string>
+	</dict>
+	<key>Register</key>
+	<dict>
+		<key>url</key>
+		<string>pa_user/register</string>
+	</dict>
+	<key>Login</key>
+	<dict>
+		<key>url</key>
+		<string>pa_user/login</string>
+	</dict>
+</dict>
+</plist>
