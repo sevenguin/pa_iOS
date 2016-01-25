@@ -17,24 +17,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//    UIImage *image = [UIImage imageNamed:@"setting.png"];
-//    UIButton *btnUser = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 35, 35)];
-//    [btnUser addTarget:self action:@selector(doSetting:) forControlEvents:UIControlEventTouchDown];
-//    [btnUser setBackgroundImage:image forState:UIControlStateNormal];
-//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btnUser];
-//    self.navigationController.navigationBar.tintColor = [UIColor colorWithWhite:0.2 alpha:1];
+    UIImage *image = [UIImage imageNamed:@"setting.png"];
+    UIButton *btnUser = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 35, 35)];
+    [btnUser addTarget:self action:@selector(doSetting:) forControlEvents:UIControlEventTouchDown];
+    [btnUser setBackgroundImage:image forState:UIControlStateNormal];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btnUser];
+    self.navigationController.navigationBar.tintColor = [UIColor colorWithWhite:0.2 alpha:1];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-//
-//-(void)doSetting:(id)sender{
-//    SettingVC *setting = [[SettingVC alloc] init];
-//    setting.view.backgroundColor = [UIColor whiteColor];
-//    [self.navigationController pushViewController:setting animated:YES];
-//}
+
+-(void)doSetting:(id)sender{
+    SettingVC *setting = [[SettingVC alloc] init];
+    setting.view.backgroundColor = [UIColor whiteColor];
+    [self.navigationController pushViewController:setting animated:YES];
+}
 
 /*
 #pragma mark - Navigation

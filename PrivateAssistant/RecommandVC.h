@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <RACSignal.h>
-//#import "SettingVC.h"
+#import "SettingVC.h"
 
 @interface RecommandVC : UITableViewController
 

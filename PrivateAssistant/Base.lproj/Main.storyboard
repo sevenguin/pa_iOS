@@ -1,10 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="ndT-s2-LFO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ndT-s2-LFO">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
+        <!--安排-->
+        <scene sceneID="1Ie-me-fJi">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XNa-uv-Uiz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController title="安排" id="2Lb-Vy-om2" customClass="RecommandVC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="acj-mn-WfE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="2Lb-Vy-om2" id="kgH-cW-l4E"/>
+                            <outlet property="delegate" destination="2Lb-Vy-om2" id="i4P-os-uzK"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="安排" id="dOt-D9-dEA" userLabel="安排"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="890" y="388"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="SuD-LJ-1Wj">
             <objects>
@@ -14,27 +33,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="vFx-kF-8AM" kind="relationship" relationship="rootViewController" id="XtF-08-9Rp"/>
+                        <segue destination="2Lb-Vy-om2" kind="relationship" relationship="rootViewController" id="kC7-pL-Mgo"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="47X-SP-tEQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="37.333333333333336" y="367.30666666666667"/>
-        </scene>
-        <!--Default-->
-        <scene sceneID="Vse-Uo-ktJ">
-            <objects>
-                <viewController id="vFx-kF-8AM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lUg-uY-TET">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Default" id="ane-gz-ocD"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="69x-Xa-XQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="484" y="367"/>
+            <point key="canvasLocation" x="70" y="388"/>
         </scene>
     </scenes>
 </document>
