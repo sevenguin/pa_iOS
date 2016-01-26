@@ -18,4 +18,8 @@
     return [[UIColor alloc] initWithRed:0.794155 green:0.794155 blue:0.794155 alpha:1];
 }
 
++(UIColor*)navigateBarColor{
+    return [[UIColor alloc] initWithRed:0.122414 green:0.720301 blue:1 alpha:0.663647];
+}
+
 @end

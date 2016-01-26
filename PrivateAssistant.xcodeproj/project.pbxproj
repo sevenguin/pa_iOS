@@ -33,25 +33,12 @@
 		50F9235B1C4E8941002317E6 /* UIColor+ColorAddtional.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F9235A1C4E8941002317E6 /* UIColor+ColorAddtional.m */; };
 		50F9235E1C4E8C87002317E6 /* CacheData.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F9235D1C4E8C87002317E6 /* CacheData.m */; };
 		50F923691C4FE03B002317E6 /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50F923681C4FE03B002317E6 /* cities.plist */; };
-		50F923871C5652C2002317E6 /* ChgPasswd.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F9236A1C5652C2002317E6 /* ChgPasswd.xib */; };
-		50F923881C5652C2002317E6 /* ChgPasswdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F9236C1C5652C2002317E6 /* ChgPasswdVC.m */; };
-		50F923891C5652C2002317E6 /* CommonChoose.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F9236D1C5652C2002317E6 /* CommonChoose.xib */; };
-		50F9238A1C5652C2002317E6 /* CommonChooseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F9236F1C5652C2002317E6 /* CommonChooseVC.m */; };
-		50F9238B1C5652C2002317E6 /* Login.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F923701C5652C2002317E6 /* Login.xib */; };
-		50F9238C1C5652C2002317E6 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F923721C5652C2002317E6 /* LoginVC.m */; };
-		50F9238D1C5652C2002317E6 /* PersonalInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F923731C5652C2002317E6 /* PersonalInfo.xib */; };
-		50F9238E1C5652C2002317E6 /* PersonalInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F923751C5652C2002317E6 /* PersonalInfoVC.m */; };
-		50F9238F1C5652C2002317E6 /* Register.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F923761C5652C2002317E6 /* Register.xib */; };
-		50F923901C5652C2002317E6 /* RegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F923781C5652C2002317E6 /* RegisterVC.m */; };
-		50F923911C5652C2002317E6 /* SearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F9237A1C5652C2002317E6 /* SearchVC.m */; };
-		50F923921C5652C2002317E6 /* Setting.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F9237B1C5652C2002317E6 /* Setting.xib */; };
-		50F923931C5652C2002317E6 /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F9237D1C5652C2002317E6 /* SettingVC.m */; };
-		50F923941C5652C2002317E6 /* TextFieldVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F9237F1C5652C2002317E6 /* TextFieldVC.m */; };
-		50F923951C5652C2002317E6 /* TextFieldVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F923801C5652C2002317E6 /* TextFieldVC.xib */; };
-		50F923961C5652C2002317E6 /* UserInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F923821C5652C2002317E6 /* UserInfoVC.m */; };
-		50F923971C5652C2002317E6 /* UserInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F923831C5652C2002317E6 /* UserInfoVC.xib */; };
-		50F923981C5652C2002317E6 /* WebContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F923851C5652C2002317E6 /* WebContainerVC.m */; };
-		50F923991C5652C2002317E6 /* WebContainerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F923861C5652C2002317E6 /* WebContainerVC.xib */; };
+		50F923A91C56712D002317E6 /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F923A71C56712D002317E6 /* MessageCell.m */; };
+		50F923AA1C56712D002317E6 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F923A81C56712D002317E6 /* MessageCell.xib */; };
+		50F923B01C5671F9002317E6 /* TalkToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F923AF1C5671F9002317E6 /* TalkToolBar.m */; };
+		50F923B21C567213002317E6 /* TalkToolBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F923B11C567213002317E6 /* TalkToolBar.xib */; };
+		50F923B71C57D904002317E6 /* mmbi.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F923B51C57D904002317E6 /* mmbi.png */; };
+		50F923B81C57D904002317E6 /* membi.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F923B61C57D904002317E6 /* membi.png */; };
 		F6F393DBE7C8D3118F0896C6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A32BF11A58CCEF692DA889B9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -117,35 +104,14 @@
 		50F9235C1C4E8C87002317E6 /* CacheData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheData.h; sourceTree = "<group>"; };
 		50F9235D1C4E8C87002317E6 /* CacheData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheData.m; sourceTree = "<group>"; };
 		50F923681C4FE03B002317E6 /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
-		50F9236A1C5652C2002317E6 /* ChgPasswd.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChgPasswd.xib; sourceTree = "<group>"; };
-		50F9236B1C5652C2002317E6 /* ChgPasswdVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChgPasswdVC.h; sourceTree = "<group>"; };
-		50F9236C1C5652C2002317E6 /* ChgPasswdVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChgPasswdVC.m; sourceTree = "<group>"; };
-		50F9236D1C5652C2002317E6 /* CommonChoose.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonChoose.xib; sourceTree = "<group>"; };
-		50F9236E1C5652C2002317E6 /* CommonChooseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonChooseVC.h; sourceTree = "<group>"; };
-		50F9236F1C5652C2002317E6 /* CommonChooseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonChooseVC.m; sourceTree = "<group>"; };
-		50F923701C5652C2002317E6 /* Login.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Login.xib; sourceTree = "<group>"; };
-		50F923711C5652C2002317E6 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
-		50F923721C5652C2002317E6 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
-		50F923731C5652C2002317E6 /* PersonalInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalInfo.xib; sourceTree = "<group>"; };
-		50F923741C5652C2002317E6 /* PersonalInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalInfoVC.h; sourceTree = "<group>"; };
-		50F923751C5652C2002317E6 /* PersonalInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalInfoVC.m; sourceTree = "<group>"; };
-		50F923761C5652C2002317E6 /* Register.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Register.xib; sourceTree = "<group>"; };
-		50F923771C5652C2002317E6 /* RegisterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterVC.h; sourceTree = "<group>"; };
-		50F923781C5652C2002317E6 /* RegisterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterVC.m; sourceTree = "<group>"; };
-		50F923791C5652C2002317E6 /* SearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchVC.h; sourceTree = "<group>"; };
-		50F9237A1C5652C2002317E6 /* SearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchVC.m; sourceTree = "<group>"; };
-		50F9237B1C5652C2002317E6 /* Setting.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Setting.xib; sourceTree = "<group>"; };
-		50F9237C1C5652C2002317E6 /* SettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
-		50F9237D1C5652C2002317E6 /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
-		50F9237E1C5652C2002317E6 /* TextFieldVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldVC.h; sourceTree = "<group>"; };
-		50F9237F1C5652C2002317E6 /* TextFieldVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldVC.m; sourceTree = "<group>"; };
-		50F923801C5652C2002317E6 /* TextFieldVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldVC.xib; sourceTree = "<group>"; };
-		50F923811C5652C2002317E6 /* UserInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoVC.h; sourceTree = "<group>"; };
-		50F923821C5652C2002317E6 /* UserInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoVC.m; sourceTree = "<group>"; };
-		50F923831C5652C2002317E6 /* UserInfoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoVC.xib; sourceTree = "<group>"; };
-		50F923841C5652C2002317E6 /* WebContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebContainerVC.h; sourceTree = "<group>"; };
-		50F923851C5652C2002317E6 /* WebContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebContainerVC.m; sourceTree = "<group>"; };
-		50F923861C5652C2002317E6 /* WebContainerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebContainerVC.xib; sourceTree = "<group>"; };
+		50F923A61C56712D002317E6 /* MessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
+		50F923A71C56712D002317E6 /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
+		50F923A81C56712D002317E6 /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		50F923AE1C5671F9002317E6 /* TalkToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkToolBar.h; sourceTree = "<group>"; };
+		50F923AF1C5671F9002317E6 /* TalkToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TalkToolBar.m; sourceTree = "<group>"; };
+		50F923B11C567213002317E6 /* TalkToolBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TalkToolBar.xib; sourceTree = "<group>"; };
+		50F923B51C57D904002317E6 /* mmbi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mmbi.png; sourceTree = "<group>"; };
+		50F923B61C57D904002317E6 /* membi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = membi.png; sourceTree = "<group>"; };
 		63615F11375A2755F3FFCC1B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A32BF11A58CCEF692DA889B9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -219,8 +185,6 @@
 				50D4B77F1C317F1A00F56C2A /* images */,
 				508A2C7B1C3167CE00F3B502 /* AppDelegate.h */,
 				508A2C7C1C3167CE00F3B502 /* AppDelegate.m */,
-				50D4B77C1C317BC300F56C2A /* RecommandVC.h */,
-				50D4B77D1C317BC300F56C2A /* RecommandVC.m */,
 				508A2C811C3167CE00F3B502 /* Main.storyboard */,
 				508A2C841C3167CE00F3B502 /* Assets.xcassets */,
 				508A2C861C3167CE00F3B502 /* LaunchScreen.storyboard */,
@@ -282,7 +246,14 @@
 		509493861C37F98C008AB2CD /* View */ = {
 			isa = PBXGroup;
 			children = (
-				50F9239A1C5652D4002317E6 /* User */,
+				50D4B77C1C317BC300F56C2A /* RecommandVC.h */,
+				50D4B77D1C317BC300F56C2A /* RecommandVC.m */,
+				50F923A61C56712D002317E6 /* MessageCell.h */,
+				50F923A71C56712D002317E6 /* MessageCell.m */,
+				50F923A81C56712D002317E6 /* MessageCell.xib */,
+				50F923AE1C5671F9002317E6 /* TalkToolBar.h */,
+				50F923AF1C5671F9002317E6 /* TalkToolBar.m */,
+				50F923B11C567213002317E6 /* TalkToolBar.xib */,
 				509493791C3433B7008AB2CD /* Common */,
 			);
 			name = View;
@@ -314,6 +285,8 @@
 		50D4B77F1C317F1A00F56C2A /* images */ = {
 			isa = PBXGroup;
 			children = (
+				50F923B51C57D904002317E6 /* mmbi.png */,
+				50F923B61C57D904002317E6 /* membi.png */,
 				5094938F1C381140008AB2CD /* tvbackimg.png */,
 				50D4B7801C317F1A00F56C2A /* setting.png */,
 			);
@@ -353,42 +326,6 @@
 				50170EE91C41374500888FAC /* Right.html */,
 				50170EE71C41372D00888FAC /* Feedback.html */,
 				50170EEB1C41375200888FAC /* Touser.html */,
-			);
-			name = User;
-			sourceTree = "<group>";
-		};
-		50F9239A1C5652D4002317E6 /* User */ = {
-			isa = PBXGroup;
-			children = (
-				50F9236A1C5652C2002317E6 /* ChgPasswd.xib */,
-				50F9236B1C5652C2002317E6 /* ChgPasswdVC.h */,
-				50F9236C1C5652C2002317E6 /* ChgPasswdVC.m */,
-				50F9236D1C5652C2002317E6 /* CommonChoose.xib */,
-				50F9236E1C5652C2002317E6 /* CommonChooseVC.h */,
-				50F9236F1C5652C2002317E6 /* CommonChooseVC.m */,
-				50F923701C5652C2002317E6 /* Login.xib */,
-				50F923711C5652C2002317E6 /* LoginVC.h */,
-				50F923721C5652C2002317E6 /* LoginVC.m */,
-				50F923731C5652C2002317E6 /* PersonalInfo.xib */,
-				50F923741C5652C2002317E6 /* PersonalInfoVC.h */,
-				50F923751C5652C2002317E6 /* PersonalInfoVC.m */,
-				50F923761C5652C2002317E6 /* Register.xib */,
-				50F923771C5652C2002317E6 /* RegisterVC.h */,
-				50F923781C5652C2002317E6 /* RegisterVC.m */,
-				50F923791C5652C2002317E6 /* SearchVC.h */,
-				50F9237A1C5652C2002317E6 /* SearchVC.m */,
-				50F9237B1C5652C2002317E6 /* Setting.xib */,
-				50F9237C1C5652C2002317E6 /* SettingVC.h */,
-				50F9237D1C5652C2002317E6 /* SettingVC.m */,
-				50F9237E1C5652C2002317E6 /* TextFieldVC.h */,
-				50F9237F1C5652C2002317E6 /* TextFieldVC.m */,
-				50F923801C5652C2002317E6 /* TextFieldVC.xib */,
-				50F923811C5652C2002317E6 /* UserInfoVC.h */,
-				50F923821C5652C2002317E6 /* UserInfoVC.m */,
-				50F923831C5652C2002317E6 /* UserInfoVC.xib */,
-				50F923841C5652C2002317E6 /* WebContainerVC.h */,
-				50F923851C5652C2002317E6 /* WebContainerVC.m */,
-				50F923861C5652C2002317E6 /* WebContainerVC.xib */,
 			);
 			name = User;
 			sourceTree = "<group>";
@@ -509,25 +446,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				509493901C381140008AB2CD /* tvbackimg.png in Resources */,
+				50F923AA1C56712D002317E6 /* MessageCell.xib in Resources */,
+				50F923B81C57D904002317E6 /* membi.png in Resources */,
+				50F923B71C57D904002317E6 /* mmbi.png in Resources */,
+				50F923B21C567213002317E6 /* TalkToolBar.xib in Resources */,
 				50170EEC1C41375200888FAC /* Touser.html in Resources */,
-				50F9238F1C5652C2002317E6 /* Register.xib in Resources */,
 				50F923691C4FE03B002317E6 /* cities.plist in Resources */,
 				50D4B7811C317F1A00F56C2A /* setting.png in Resources */,
-				50F923921C5652C2002317E6 /* Setting.xib in Resources */,
-				50F923951C5652C2002317E6 /* TextFieldVC.xib in Resources */,
 				50CADA1F1C45266F00A3FAD3 /* apis.plist in Resources */,
-				50F923971C5652C2002317E6 /* UserInfoVC.xib in Resources */,
 				508A2C881C3167CE00F3B502 /* LaunchScreen.storyboard in Resources */,
 				50170EE81C41372D00888FAC /* Feedback.html in Resources */,
 				508A2C851C3167CE00F3B502 /* Assets.xcassets in Resources */,
 				50170EEA1C41374500888FAC /* Right.html in Resources */,
-				50F923991C5652C2002317E6 /* WebContainerVC.xib in Resources */,
-				50F923891C5652C2002317E6 /* CommonChoose.xib in Resources */,
 				50DA3F8B1C40013600EE9958 /* Version.html in Resources */,
-				50F923871C5652C2002317E6 /* ChgPasswd.xib in Resources */,
-				50F9238D1C5652C2002317E6 /* PersonalInfo.xib in Resources */,
 				508A2C831C3167CE00F3B502 /* Main.storyboard in Resources */,
-				50F9238B1C5652C2002317E6 /* Login.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,27 +532,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50F923901C5652C2002317E6 /* RegisterVC.m in Sources */,
 				50DA11DD1C3ABEAE00D0DBF0 /* Setting.m in Sources */,
 				509493931C38228C008AB2CD /* BusinessManager.m in Sources */,
-				50F9238C1C5652C2002317E6 /* LoginVC.m in Sources */,
-				50F923911C5652C2002317E6 /* SearchVC.m in Sources */,
+				50F923A91C56712D002317E6 /* MessageCell.m in Sources */,
 				508A2C7D1C3167CE00F3B502 /* AppDelegate.m in Sources */,
-				50F9238E1C5652C2002317E6 /* PersonalInfoVC.m in Sources */,
-				50F923981C5652C2002317E6 /* WebContainerVC.m in Sources */,
 				50F9235B1C4E8941002317E6 /* UIColor+ColorAddtional.m in Sources */,
-				50F9238A1C5652C2002317E6 /* CommonChooseVC.m in Sources */,
-				50F923881C5652C2002317E6 /* ChgPasswdVC.m in Sources */,
 				508A2C7A1C3167CE00F3B502 /* main.m in Sources */,
 				50D4B77E1C317BC300F56C2A /* RecommandVC.m in Sources */,
+				50F923B01C5671F9002317E6 /* TalkToolBar.m in Sources */,
 				509493841C37ADFD008AB2CD /* BaseTableViewCell.m in Sources */,
 				5094937C1C3433D9008AB2CD /* TextTableViewCell.m in Sources */,
 				509493781C32E9F9008AB2CD /* Configure.m in Sources */,
 				509493961C3822B9008AB2CD /* BusinessRetInfo.m in Sources */,
 				509493801C3438F0008AB2CD /* CellConfig.m in Sources */,
-				50F923961C5652C2002317E6 /* UserInfoVC.m in Sources */,
-				50F923931C5652C2002317E6 /* SettingVC.m in Sources */,
-				50F923941C5652C2002317E6 /* TextFieldVC.m in Sources */,
 				50F9235E1C4E8C87002317E6 /* CacheData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

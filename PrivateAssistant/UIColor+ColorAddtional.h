@@ -12,5 +12,6 @@
 
 +(UIColor*)btnEnableColor;
 +(UIColor*)btnDisableColor;
++(UIColor*)navigateBarColor;
 
 @end

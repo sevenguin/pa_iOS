@@ -6,6 +6,8 @@
 //  Copyright © 2015年 weill. All rights reserved.
 //
 
+//old version:https://github.com/sevenguin/pa_iOS/tree/old_version
+
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
