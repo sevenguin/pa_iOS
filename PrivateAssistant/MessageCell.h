@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Message.h"
 
 @interface MessageCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
++(instancetype)createCell:(UITableView *)tableView;
+
+-(void)setMessage:(Message*)message;
 
 @end

@@ -60,8 +60,13 @@
 }
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    MessageCell* cell = [[MessageCell alloc] init];
-    //cell.textLabel.text = [self.messages objectAtIndex:indexPath.row];
+    MessageCell* cell = [MessageCell createCell:tableView];
+    Message* message = [[Message alloc] init];
+    message.time = @"10:30";
+    message.messageType = MACHINE_MESSAGE_TYPE;
+    message.header = @"setting";
+    message.message = [self.messages objectAtIndex:indexPath.row];
+    [cell setMessage: message];
     return cell;
 }
 

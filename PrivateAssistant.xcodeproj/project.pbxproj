@@ -39,6 +39,7 @@
 		50F923B21C567213002317E6 /* TalkToolBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F923B11C567213002317E6 /* TalkToolBar.xib */; };
 		50F923B71C57D904002317E6 /* mmbi.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F923B51C57D904002317E6 /* mmbi.png */; };
 		50F923B81C57D904002317E6 /* membi.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F923B61C57D904002317E6 /* membi.png */; };
+		50F923BC1C590437002317E6 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F923BB1C590437002317E6 /* Message.m */; };
 		F6F393DBE7C8D3118F0896C6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A32BF11A58CCEF692DA889B9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +113,8 @@
 		50F923B11C567213002317E6 /* TalkToolBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TalkToolBar.xib; sourceTree = "<group>"; };
 		50F923B51C57D904002317E6 /* mmbi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mmbi.png; sourceTree = "<group>"; };
 		50F923B61C57D904002317E6 /* membi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = membi.png; sourceTree = "<group>"; };
+		50F923BA1C590437002317E6 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		50F923BB1C590437002317E6 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
 		63615F11375A2755F3FFCC1B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A32BF11A58CCEF692DA889B9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -268,6 +271,8 @@
 				509493951C3822B9008AB2CD /* BusinessRetInfo.m */,
 				509493911C38228C008AB2CD /* BusinessManager.h */,
 				509493921C38228C008AB2CD /* BusinessManager.m */,
+				50F923BA1C590437002317E6 /* Message.h */,
+				50F923BB1C590437002317E6 /* Message.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -539,6 +544,7 @@
 				50F9235B1C4E8941002317E6 /* UIColor+ColorAddtional.m in Sources */,
 				508A2C7A1C3167CE00F3B502 /* main.m in Sources */,
 				50D4B77E1C317BC300F56C2A /* RecommandVC.m in Sources */,
+				50F923BC1C590437002317E6 /* Message.m in Sources */,
 				50F923B01C5671F9002317E6 /* TalkToolBar.m in Sources */,
 				509493841C37ADFD008AB2CD /* BaseTableViewCell.m in Sources */,
 				5094937C1C3433D9008AB2CD /* TextTableViewCell.m in Sources */,

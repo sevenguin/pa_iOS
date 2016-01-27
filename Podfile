@@ -3,4 +3,4 @@ pod 'ReactiveCocoa', '~> 2.5'
 pod 'ViewDeck'
 pod 'AFNetworking', '~>2.0'
 pod 'AFNetworkActivityLogger', '~>2.0.4'
-
+pod 'Masonry', '~> 0.6.4'
