@@ -12,7 +12,7 @@
 @interface MessageCell : UITableViewCell
 
 +(instancetype)createCell:(UITableView *)tableView;
-
+@property (nonatomic)CGFloat height;
 -(void)setMessage:(Message*)message;
 
 @end

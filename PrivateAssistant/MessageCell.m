@@ -17,7 +17,6 @@
 @property (nonatomic) UIButton *mMessage;
 @property (nonatomic) UIButton *selfMessage;
 @property (nonatomic) UIImageView *selfHeader;
-@property (nonatomic)CGFloat height;
 
 @end
 
@@ -27,12 +26,15 @@
     MessageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"messagecell"];
     if(!cell){
         cell = [[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil].lastObject;
-        cell.lbTime = cell.subviews[0].subviews[1];
-        cell.mHeader = cell.subviews[0].subviews[2];
-        cell.selfHeader = cell.subviews[0].subviews[3];
-        cell.mMessage = cell.subviews[0].subviews[4];
+        NSLog(@"subviews.......\n:%@", cell.subviews[0].subviews);
+        cell.lbTime = cell.subviews[0].subviews[0];
+        cell.lbTime.layer.cornerRadius = 5.0f;
+        cell.mHeader = cell.subviews[0].subviews[1];
+        cell.selfHeader = cell.subviews[0].subviews[2];
+        cell.mMessage = cell.subviews[0].subviews[3];
         cell.selfMessage = cell.subviews[0].subviews[5];
     }
+    
     return cell;
 }
 
@@ -50,7 +52,7 @@
         self.selfMessage.hidden = NO;
         self.mHeader.hidden = YES;
         self.mMessage.hidden = YES;
-        [self.mMessage setTitle:message.message forState:UIControlStateNormal];
+        [self.selfMessage setTitle:message.message forState:UIControlStateNormal];
         [self showMessage:self.selfMessage header:self.selfHeader];
     }
 }
@@ -59,12 +61,8 @@
     button.titleLabel.numberOfLines = 0;
     button.contentEdgeInsets = UIEdgeInsetsMake(15, 15, 15, 15);
     [self layoutIfNeeded];
-//    [button mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.height.equalTo(button.mas_height).height.offset(10);
-//    }];
-    //[button updateConstraints];
     self.height = CGRectGetMaxY(button.frame) > CGRectGetMaxY(image.frame) ? CGRectGetMaxY(button.frame) : CGRectGetMaxY(image.frame);
-    self.height += 10;
+    self.height += 110;
 }
 
 - (void)awakeFromNib {

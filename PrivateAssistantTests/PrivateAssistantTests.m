@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "Setting.h"
+#import "CommonTools.h"
 
 @interface PrivateAssistantTests : XCTestCase
 
@@ -26,12 +27,9 @@
 }
 
 - (void)testExample {
-    NSDictionary* d = @{@"a":@"1", @"b":@"2"};
-    NSMutableDictionary* md = [[NSMutableDictionary alloc] initWithDictionary:@{@"c":@"3", @"d":@"4"}];
-    
-    NSLog(@"before ret:%@", md);
-    [md setDictionary:d];
-    NSLog(@"after ret:%@", md);
+    CommonTools* strTime = [[CommonTools alloc] init];
+    NSString* str = [strTime getIntervalTimeString:nil];
+    NSLog(@"str time: %@------\n\n", str);
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
 }

@@ -25,6 +25,8 @@
 		509493901C381140008AB2CD /* tvbackimg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5094938F1C381140008AB2CD /* tvbackimg.png */; };
 		509493931C38228C008AB2CD /* BusinessManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 509493921C38228C008AB2CD /* BusinessManager.m */; };
 		509493961C3822B9008AB2CD /* BusinessRetInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 509493951C3822B9008AB2CD /* BusinessRetInfo.m */; };
+		50C0E8E21C5A655000A5ED58 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C0E8E11C5A655000A5ED58 /* Question.m */; };
+		50C0E8E51C5A7E9A00A5ED58 /* CommonTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C0E8E41C5A7E9A00A5ED58 /* CommonTools.m */; };
 		50CADA1F1C45266F00A3FAD3 /* apis.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50CADA1E1C45266F00A3FAD3 /* apis.plist */; };
 		50D4B77E1C317BC300F56C2A /* RecommandVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D4B77D1C317BC300F56C2A /* RecommandVC.m */; };
 		50D4B7811C317F1A00F56C2A /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 50D4B7801C317F1A00F56C2A /* setting.png */; };
@@ -93,6 +95,10 @@
 		509493921C38228C008AB2CD /* BusinessManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessManager.m; sourceTree = "<group>"; };
 		509493941C3822B9008AB2CD /* BusinessRetInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessRetInfo.h; sourceTree = "<group>"; };
 		509493951C3822B9008AB2CD /* BusinessRetInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessRetInfo.m; sourceTree = "<group>"; };
+		50C0E8E01C5A655000A5ED58 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		50C0E8E11C5A655000A5ED58 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		50C0E8E31C5A7E9A00A5ED58 /* CommonTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonTools.h; sourceTree = "<group>"; };
+		50C0E8E41C5A7E9A00A5ED58 /* CommonTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonTools.m; sourceTree = "<group>"; };
 		50CADA1E1C45266F00A3FAD3 /* apis.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apis.plist; sourceTree = "<group>"; };
 		50D4B77C1C317BC300F56C2A /* RecommandVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommandVC.h; sourceTree = "<group>"; };
 		50D4B77D1C317BC300F56C2A /* RecommandVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommandVC.m; sourceTree = "<group>"; };
@@ -242,6 +248,8 @@
 				5094937F1C3438F0008AB2CD /* CellConfig.m */,
 				509493761C32E9F9008AB2CD /* Configure.h */,
 				509493771C32E9F9008AB2CD /* Configure.m */,
+				50C0E8E31C5A7E9A00A5ED58 /* CommonTools.h */,
+				50C0E8E41C5A7E9A00A5ED58 /* CommonTools.m */,
 			);
 			name = Tools;
 			sourceTree = "<group>";
@@ -273,6 +281,8 @@
 				509493921C38228C008AB2CD /* BusinessManager.m */,
 				50F923BA1C590437002317E6 /* Message.h */,
 				50F923BB1C590437002317E6 /* Message.m */,
+				50C0E8E01C5A655000A5ED58 /* Question.h */,
+				50C0E8E11C5A655000A5ED58 /* Question.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -537,6 +547,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50C0E8E51C5A7E9A00A5ED58 /* CommonTools.m in Sources */,
 				50DA11DD1C3ABEAE00D0DBF0 /* Setting.m in Sources */,
 				509493931C38228C008AB2CD /* BusinessManager.m in Sources */,
 				50F923A91C56712D002317E6 /* MessageCell.m in Sources */,
@@ -550,6 +561,7 @@
 				5094937C1C3433D9008AB2CD /* TextTableViewCell.m in Sources */,
 				509493781C32E9F9008AB2CD /* Configure.m in Sources */,
 				509493961C3822B9008AB2CD /* BusinessRetInfo.m in Sources */,
+				50C0E8E21C5A655000A5ED58 /* Question.m in Sources */,
 				509493801C3438F0008AB2CD /* CellConfig.m in Sources */,
 				50F9235E1C4E8C87002317E6 /* CacheData.m in Sources */,
 			);

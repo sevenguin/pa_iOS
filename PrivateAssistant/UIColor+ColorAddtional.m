@@ -22,4 +22,8 @@
     return [[UIColor alloc] initWithRed:0.122414 green:0.720301 blue:1 alpha:0.663647];
 }
 
++(UIColor*)cellBackColor{
+    return [[UIColor alloc] initWithRed:1 green:1 blue:1 alpha:1];
+}
+
 @end

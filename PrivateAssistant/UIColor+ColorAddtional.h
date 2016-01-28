@@ -13,5 +13,6 @@
 +(UIColor*)btnEnableColor;
 +(UIColor*)btnDisableColor;
 +(UIColor*)navigateBarColor;
++(UIColor*)cellBackColor;
 
 @end
