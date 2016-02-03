@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TalkToolBar : UIView
+@interface TalkToolBar : UIView<UITextFieldDelegate>
 +(instancetype)toolBar;
 @end

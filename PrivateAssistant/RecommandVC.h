@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <RACSignal.h>
 
-@interface RecommandVC : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@interface RecommandVC : UIViewController<UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

@@ -41,6 +41,7 @@
     talkToolBar.backgroundColor = [UIColor btnEnableColor];
     [((UIButton*)talkToolBar.subviews[4]) addTarget:self action:@selector(doSend:) forControlEvents:UIControlEventTouchUpInside];
     self.tfMessage = ((UITextField*)talkToolBar.subviews[3]);
+    self.tfMessage.delegate = self;
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -50,6 +51,33 @@
     [self.view addSubview:talkToolBar];
     [self.view addSubview:self.tableView];
     [self getWelcomeMessage];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyBoardShow:) name:UIKeyboardDidShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyBoardHide:) name:UIKeyboardDidHideNotification object:nil];
+}
+
+
+-(void)textFieldDidBeginEditing:(UITextField *)textField{
+    NSLog(@"begin edit...");
+}
+
+-(void)keyBoardShow:(id)sender{
+    NSLog(@"keyboard show");
+}
+
+-(void)textFieldDidEndEditing:(UITextField *)textField{
+    NSLog(@"end edit...");
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    NSLog(@"return...");
+    [self doSend:nil];
+    [self.tfMessage resignFirstResponder];
+    return YES;
+}
+
+-(void)keyBoardHide:(id)sender{
+    NSLog(@"key board hide");
 }
 
 -(void)doSend:(id)sender{
@@ -91,6 +119,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardDidShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardDidHideNotification object:nil];
 }
 
 -(void)getWelcomeMessage{

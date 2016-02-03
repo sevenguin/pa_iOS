@@ -11,6 +11,12 @@
 
 @interface MessageCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *lbTime;
+@property (weak, nonatomic) IBOutlet UIButton *mMessage;
+@property (weak, nonatomic) IBOutlet UIButton *selfMessage;
+@property (weak, nonatomic) IBOutlet UIImageView *selfHeader;
+@property (weak, nonatomic) IBOutlet UIImageView *mHeader;
+
 +(instancetype)createCell:(UITableView *)tableView;
 @property (nonatomic)CGFloat height;
 -(void)setMessage:(Message*)message;

@@ -9,14 +9,9 @@
 #import "MessageCell.h"
 #import <MASConstraintMaker.h>
 #import "Masonry.h"
+#import "CommonTools.h"
 
 @interface MessageCell()
-
-@property (nonatomic) UILabel *lbTime;
-@property (nonatomic) UIImageView *mHeader;
-@property (nonatomic) UIButton *mMessage;
-@property (nonatomic) UIButton *selfMessage;
-@property (nonatomic) UIImageView *selfHeader;
 
 @end
 
@@ -26,13 +21,6 @@
     MessageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"messagecell"];
     if(!cell){
         cell = [[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil].lastObject;
-        NSLog(@"subviews.......\n:%@", cell.subviews[0].subviews);
-        cell.lbTime = cell.subviews[0].subviews[0];
-        cell.lbTime.layer.cornerRadius = 5.0f;
-        cell.mHeader = cell.subviews[0].subviews[1];
-        cell.selfHeader = cell.subviews[0].subviews[2];
-        cell.mMessage = cell.subviews[0].subviews[3];
-        cell.selfMessage = cell.subviews[0].subviews[5];
     }
     
     return cell;
@@ -62,7 +50,7 @@
     button.contentEdgeInsets = UIEdgeInsetsMake(15, 15, 15, 15);
     [self layoutIfNeeded];
     self.height = CGRectGetMaxY(button.frame) > CGRectGetMaxY(image.frame) ? CGRectGetMaxY(button.frame) : CGRectGetMaxY(image.frame);
-    self.height += 110;
+    self.height += [CommonTools calcuFontToSize:button.titleLabel.text font:button.titleLabel.font maxSize:CGSizeMake(button.frame.size.width, [UIScreen mainScreen].bounds.size.height)].height;
 }
 
 - (void)awakeFromNib {
@@ -71,7 +59,7 @@
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
+    
     // Configure the view for the selected state
 }
 

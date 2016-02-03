@@ -14,12 +14,12 @@
             <items>
                 <barButtonItem id="5bk-aR-Tcn"/>
                 <barButtonItem style="plain" id="BS3-SG-EPu">
-                    <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" id="BJU-iD-zmi">
+                    <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" id="BJU-iD-zmi">
                         <rect key="frame" x="18" y="6" width="299" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.99263430436264011" green="1" blue="0.99447572827198005" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <textInputTraits key="textInputTraits"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes" spellCheckingType="yes" returnKeyType="send" enablesReturnKeyAutomatically="YES"/>
                     </textField>
                 </barButtonItem>
                 <barButtonItem style="plain" id="BRB-6H-S7D">
@@ -34,6 +34,9 @@
                 </barButtonItem>
             </items>
             <color key="tintColor" red="0.01846713403741326" green="0.018604166666666644" blue="0.018501392194726605" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="delegate" destination="BJU-iD-zmi" id="4PS-j1-gPI"/>
+            </connections>
             <point key="canvasLocation" x="289.5" y="173"/>
         </toolbar>
     </objects>

@@ -11,7 +11,8 @@
 @implementation TalkToolBar
 
 +(instancetype)toolBar{
-    return [[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil].lastObject;
+    TalkToolBar* talkTB = [[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil].lastObject;
+    return talkTB;
 }
 
 /*
