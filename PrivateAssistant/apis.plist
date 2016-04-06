@@ -7,30 +7,10 @@
 		<key>url</key>
 		<string>pa_message/getquestion</string>
 	</dict>
-	<key>SendVerifyCode</key>
+	<key>SendMessage</key>
 	<dict>
 		<key>url</key>
-		<string>pa_user/sendverifycode</string>
-	</dict>
-	<key>QueryUserBaseInfo</key>
-	<dict>
-		<key>url</key>
-		<string>pa_user/queryuserbaseinfo</string>
-	</dict>
-	<key>SetNickName</key>
-	<dict>
-		<key>url</key>
-		<string>pa_user/setnickname</string>
-	</dict>
-	<key>Register</key>
-	<dict>
-		<key>url</key>
-		<string>pa_user/register</string>
-	</dict>
-	<key>Login</key>
-	<dict>
-		<key>url</key>
-		<string>pa_user/login</string>
+		<string>pa_message/sendmessage</string>
 	</dict>
 </dict>
 </plist>

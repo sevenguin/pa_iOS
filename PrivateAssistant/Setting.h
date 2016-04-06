@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#define UNIQUE_URI @"com.weill.privateassitant"
 @interface Setting : NSObject
 
 +(BOOL)checkEmailValid:(NSString*)email;
++(NSDictionary*)loadFromLocal;
++(void)updateToLocal:(id)key value:(NSObject*)value;
 
 @end

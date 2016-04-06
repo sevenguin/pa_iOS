@@ -21,4 +21,20 @@
     }
 }
 
++(void)updateToLocal:(id)key value:(NSObject*)value{
+    NSDictionary* config = @{key:value};
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    [ud setPersistentDomain:config forName:UNIQUE_URI];
+    [ud synchronize];
+}
+
++(NSDictionary*)loadFromLocal{
+    NSUserDefaults *ud = [[NSUserDefaults alloc] init];
+    NSDictionary *dicts = [ud persistentDomainForName:UNIQUE_URI];
+    NSMutableDictionary* retdict = [[NSMutableDictionary alloc] initWithDictionary:dicts];
+    [retdict setObject:[dicts objectForKey:@"userid"] != nil ? [dicts objectForKey:@"userid"] : @-1 forKey:@"userid"];
+    [retdict setObject:[dicts objectForKey:@"hasLogin"] != nil ? [dicts objectForKey:@"hasLogin"] : @NO forKey:@"hasLogin"];
+    return retdict;
+}
+
 @end

@@ -88,4 +88,22 @@
     }];
 }
 
+-(void)getQuestion:(NSInteger)userid
+        questionId:(NSInteger)questionId
+            status:(NSInteger)status
+           success:(void (^)(id))success
+           failure:(void (^)(NSError *error))failure{
+    
+    [[BusinessManager shareManager] doRequest:@"GetQuestion"
+                                    params:@{@"questionid":[[NSNumber alloc] initWithLong:questionId],
+                                             @"userid":[[NSNumber alloc] initWithLong:userid],
+                                             @"status":[[NSNumber alloc] initWithLong:status]} success:^(id value) {
+        success(value);
+        
+    } failure:^(NSError *error) {
+        //
+        failure(error);
+    }];
+}
+
 @end

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <RACSignal.h>
+#import "Setting.h"
 
 @interface RecommandVC : UIViewController<UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;

@@ -22,6 +22,7 @@
 @property (nonatomic)UITextField* tfMessage;
 @property (nonatomic)CGFloat rowHeight;
 @property (nonatomic)Question* curQuestion;
+@property (nonatomic)NSDictionary* config;
 @end
 
 @implementation RecommandVC
@@ -50,24 +51,24 @@
     self.curQuestion = [[Question alloc] init];
     [self.view addSubview:talkToolBar];
     [self.view addSubview:self.tableView];
+    self.config = [Setting loadFromLocal];
     [self getWelcomeMessage];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyBoardShow:) name:UIKeyboardDidShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyBoardHide:) name:UIKeyboardDidHideNotification object:nil];
 }
 
-
--(void)textFieldDidBeginEditing:(UITextField *)textField{
-    NSLog(@"begin edit...");
-}
-
+//-(void)textFieldDidBeginEditing:(UITextField *)textField{
+//    NSLog(@"begin edit...");
+//}
+//
 -(void)keyBoardShow:(id)sender{
     NSLog(@"keyboard show");
 }
-
--(void)textFieldDidEndEditing:(UITextField *)textField{
-    NSLog(@"end edit...");
-}
+//
+//-(void)textFieldDidEndEditing:(UITextField *)textField{
+//    NSLog(@"end edit...");
+//}
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
     NSLog(@"return...");
@@ -87,7 +88,45 @@
     message.message = self.tfMessage.text;
     message.header = @"setting";
     [self refreshMessage:message];
+    NSString* strMessage = self.tfMessage.text;
     self.tfMessage.text = @"";
+    NSString* questionId = @"";
+    if(_curQuestion != nil){
+        questionId = _curQuestion.questionId;
+    }
+    [[BusinessManager shareManager] doRequest:@"SendMessage" params:@{@"message":strMessage,
+                                                                      @"questionid":questionId,
+                                                                      @"userid":[self.config objectForKey:@"userid"]} success:^(id data)
+    {
+        NSDictionary *value = [data objectForKey:@"data"];
+        NSInteger questionid = [[value objectForKey:@"questionid"] integerValue];
+        NSInteger status = [[value objectForKey:@"status"] integerValue];
+        NSInteger userid = [[value objectForKey:@"userid"] integerValue];
+        if([[self.config objectForKey:@"userid"] integerValue] == -1){
+            [Setting updateToLocal:@"userid" value:[[NSNumber alloc] initWithInteger:userid]];
+            self.config = [Setting loadFromLocal];
+        }
+        [self getNextQuestion:questionid status:status];
+        
+    } failure:^(NSError *error) {
+        //
+    }];
+}
+
+-(void)getNextQuestion:(NSInteger)curquestionid status:(NSInteger)status{
+    [[BusinessManager shareManager] getQuestion:[[self.config objectForKey:@"userid"] integerValue]
+                                     questionId:curquestionid status:status success:^(id data) {
+        self.curQuestion.questionId = [[data valueForKey:@"data"] valueForKey:@"questionid"];
+        self.curQuestion.questionInfo = [[data valueForKey:@"data"] valueForKey:@"questioninfo"];
+        Message* message = [[Message alloc] init];
+        message.messageType = MACHINE_MESSAGE_TYPE;
+        message.time = [CommonTools getIntervalTimeString:nil];
+        message.message = self.curQuestion.questionInfo;
+        message.header = @"self";
+        [self refreshMessage: message];
+    } failure:^(NSError *error) {
+        ///
+    }];
 }
 
 -(void)refreshMessage:(Message*)message{
@@ -127,10 +166,12 @@
 }
 
 -(void)getWelcomeMessage{
-    [[BusinessManager shareManager] doRequest:@"GetQuestion" params:@{@"question_id":@0} success:^(id value) {
+    NSInteger status = ([[self.config objectForKey:@"userid"] integerValue] > 0) ? 1 : 0;
+    [[BusinessManager shareManager] getQuestion:[[self.config objectForKey:@"userid"] integerValue]
+                                     questionId:0 status:status success:^(id value) {
         if ([[value valueForKey:@"code"] integerValue] == 0) {
-            self.curQuestion.questionId = [[value valueForKey:@"data"] valueForKey:@"question_id"];
-            self.curQuestion.questionInfo = [[value valueForKey:@"data"] valueForKey:@"question_info"];
+            self.curQuestion.questionId = [[value valueForKey:@"data"] valueForKey:@"questionid"];
+            self.curQuestion.questionInfo = [[value valueForKey:@"data"] valueForKey:@"questioninfo"];
             NSLog(@"question_id:%@, question_info:%@", self.curQuestion.questionId, self.curQuestion.questionInfo);
             Message* message = [[Message alloc] init];
             message.messageType = MACHINE_MESSAGE_TYPE;
@@ -139,10 +180,8 @@
             message.header = @"self";
             [self refreshMessage: message];
         }
-        
     } failure:^(NSError *error) {
         //
-        NSLog(@"error");
     }];
 }
 

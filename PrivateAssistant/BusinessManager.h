@@ -23,5 +23,10 @@
           params:(NSDictionary *)param
          success:(void (^)(BusinessRetInfo*))success
          failure:(void (^)(NSError *error))failure;
+-(void)getQuestion:(NSInteger)userid
+        questionId:(NSInteger)questionId
+            status:(NSInteger)status
+           success:(void (^)(id))success
+           failure:(void (^)(NSError *error))failure;
 
 @end
